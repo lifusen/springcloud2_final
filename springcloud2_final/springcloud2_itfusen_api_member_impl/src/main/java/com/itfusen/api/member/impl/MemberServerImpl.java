@@ -17,6 +17,11 @@ public class MemberServerImpl implements ImemberService {
 
     public String getMember(@RequestParam("name") String name)
     {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return "Member服务收到名称："+ name ;
     }
 }

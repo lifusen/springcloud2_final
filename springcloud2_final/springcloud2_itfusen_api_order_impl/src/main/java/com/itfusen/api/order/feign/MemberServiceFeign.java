@@ -1,5 +1,6 @@
 package com.itfusen.api.order.feign;
 
+import com.itfusen.api.order.impl.OrderServerFeign;
 import com.itfusen.service.member.ImemberService;
 import org.springframework.cloud.openfeign.FeignClient;
 
